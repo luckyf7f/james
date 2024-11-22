@@ -1,0 +1,494 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('fondo.jpg');
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Hace que la imagen se mantenga fija mientras se desplaza el contenido */
+    background-repeat: no-repeat; /* Evita que la imagen se repita si es más pequeña que el área de la pantalla */
+
+}
+
+
+body h1{
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+}
+
+
+
+
+
+
+nav {
+    background-color: #00ff0d;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid #73ff00;
+    position: relative;
+    margin-top: 50px; /* Ajusta este valor según la distancia deseada */
+}
+
+
+/* Estilo de la barra de navegación */
+nav {
+    background-color: #00ff0d;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid #73ff00; /* Borde adicional para destacar */
+    position: relative;
+}
+
+/* Efecto de elevación al pasar el cursor */
+nav:hover {
+    background-color: #73ff00; /* Color de fondo más oscuro al pasar el cursor */
+    transform: translateY(-3px);
+}
+
+/* Estilos de los enlaces */
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 4px;
+    position: relative;
+}
+
+/* Subrayado animado en hover */
+nav a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+nav a:hover {
+    color: #ffffff; /* Cambio de color cuando se pasa el mouse */
+    transform: translateY(-2px);
+}
+
+nav a:hover::after {
+    width: 100%; /* Subrayado animado */
+}
+
+/* Estilos de dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Botón del dropdown */
+.dropbtn {
+    background-color: #00ff0d;
+    color: rgb(0, 0, 0);
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 4px;
+}
+
+.dropbtn:hover {
+    background-color: #73ff00; 
+    transform: translateY(-2px);
+}
+
+/* Contenido del dropdown (por defecto está oculto) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #73ff00;
+    min-width: 160px;
+    z-index: 1;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Enlaces dentro del dropdown */
+.dropdown-content a {
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Subrayado animado en hover dentro del dropdown */
+.dropdown-content a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.dropdown-content a:hover {
+    background-color: #73ff00;
+    color: white;
+}
+
+.dropdown-content a:hover::after {
+    width: 100%;
+}
+
+/* Mostrar el contenido del dropdown cuando el usuario pasa el mouse sobre el dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.contenedor {
+    position: relative; /* Para que los elementos hijos puedan moverse con respecto a este contenedor */
+    width: 100%; /* Ajusta según tus necesidades */
+    height: auto; /* Ajusta según tus necesidades */
+    font-family: 'Arial', sans-serif;
+    top: -220px; /* Ajusta para moverlo verticalmente */
+    left: -300px; /* Ajusta para moverlo horizontalmente */
+    color: #ffffff;
+}
+
+
+
+h2{
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+.imagen{
+    display: flex; /* Habilita Flexbox */
+    justify-content: center; /* Alineación horizontal */
+    align-items: center; /* Alineación vertical */
+    height: 300px; /* Ajusta según sea necesario */
+}
+
+.servicios{
+    width: 500px; /* Aumenta el tamaño de la imagen, ocupando el 80% del contenedor */
+    max-width: 800px; /* Limita el tamaño máximo a 800px */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 120px; /* Opcional: para mover verticalmente dentro del contenedor */
+    margin-left: 630px; /* Opcional: para mover horizontalmente dentro del contenedor */
+}
+
+.servicios:hover {
+    transform: scale(1.1); /* Aumenta aún más el tamaño al pasar el mouse */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+
+/* Contenedor principal */
+.panel-container {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre paneles */
+    justify-content: center; /* Centra los paneles */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Título principal */
+.main-title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+/* Estilo de cada panel */
+.panel {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo transparente oscuro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 300px; /* Ancho fijo para cada panel */
+    flex: 1; /* Permite que se ajuste según el espacio disponible */
+    color: #ffffff; /* Color de texto blanco */
+    font-family: 'Arial', sans-serif;
+}
+
+.panel-title {
+    font-size: 1.2em; /* Ajusta el tamaño a tu preferencia */
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilos de la lista */
+.panel ul {
+    list-style-type: none;
+    padding-left: 0; /* Elimina la sangría de la lista */
+    font-family: 'Arial', sans-serif;
+}
+
+.panel li {
+    display: flex; /* Para alinear la imagen y el texto */
+    align-items: center;
+    margin-bottom: 8px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Botón de solicitar servicio */
+.service-btn {
+    text-decoration: none;
+    background-color: #00ff1a;
+    color: white;
+    padding: 8px 20px; /* Reducir el tamaño del botón */
+    border: none;
+    border-radius: 5px;
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    width: fit-content; /* Ajustar al contenido */
+    margin-left: auto; /* Centrando el botón */
+    margin-right: auto; /* Centrando el botón */
+    text-align: center;
+}
+
+.service-btn:hover {
+    background-color: #009933; /* Cambio de color al pasar el mouse */
+    transition: background-color 0.3s ease;
+}
+.check {
+    max-width: 15px; /* Tamaño máximo para la imagen */
+    max-height: 15px; /* Tamaño máximo para la imagen */
+    margin-right: 10px; /* Espacio entre imagen y texto */
+    object-fit: contain; /* Mantiene la proporción de la imagen sin deformar */
+}
+
+
+
+
+
+
+
+
+
+/* Contenedor principal */
+.formulario-container {
+    max-width: 1000px; /* Ancho máximo más amplio */
+    min-width: 800px;  /* Ancho mínimo opcional para pantallas pequeñas */
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Títulos */
+h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilos del formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Botón de envío */
+.btn-submit {
+    padding: 10px 15px;
+    background: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background: #0056b3;
+}
+
+/* Estilos del voucher */
+.voucher {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.voucher p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.voucher strong {
+    color: #333;
+}
+
+/* Opciones dinámicas */
+.opciones-dinamicas label {
+    font-weight: normal;
+    color: #666;
+}
+
+.opciones-dinamicas input {
+    margin-top: 5px;
+}
+
+.qr-code {
+    margin-top: 20px;
+}
+
+#generar-qr {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#generar-qr:hover {
+    background-color: #45a049;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.container-footer {
+    width: 100%; 
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #24262b;
+    color: white;
+    padding: 40px 0;
+    margin-top: auto;
+    position: relative;
+    width: 100vw;      /* 100vw asegura que ocupe el ancho completo de la ventana */
+    height: 350px;     /* Ajusta la altura según tus necesidades */
+    bottom: 0;
+    top: 100px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #00c3ff;
+    padding-bottom: 10px;
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #bbbbbb;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: white;
+    padding-left: 6px;
+}
+
+.social-link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.social-link a:hover {
+    background-color: #00c3ff;
+}
+
+@media (max-width: 991px) {
+    .footer-row {
+        text-align: center;
+    }
+    .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

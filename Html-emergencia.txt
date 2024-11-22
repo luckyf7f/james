@@ -1,0 +1,265 @@
+HTML:
+--
+--
+--
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Wash House</title>
+</head>
+<body>
+    
+    <nav>
+        <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Inicio</a>
+            <div class="dropdown-content">
+                <a href="#inicio">Menu</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Servicios</a>
+            <div class="dropdown-content">
+                <a href="#Hogares">Limpieza en Domicilio</a>
+                <a href="#Oficinas">Limpieza en Oficinas</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Expertos</a>
+            <div class="dropdown-content">
+                <a href="#experiencia">Somos Profecionales</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Contactanos</a>
+            <div class="dropdown-content">
+                <a href="#contacto">Contacto</a>
+                <a href="#local">Local</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+    <img src="imagenes/logo.png" class="logo">
+    <img src="imagenes/boot1.jpg" class="logoimg">
+    <section id="inicio">
+        <br><br><br>
+    <h2 class="espacioh2">Wash House</h2>
+    <br><br>
+    <p class="espaciop">Wash House fue fundada hace 7 años en Lima, Perú, como una empresa
+        especializada en la limpieza de alfombras, colchones y muebles a domicilio. Poco a poco hemos ido creciendo ofreciendo un servicio de alta
+        calidad y conveniencia para nuestros clientes <br>
+    </p>
+    <br><br><br>
+    <h2>Acerca de nosotros</h2>
+    <br><br>
+    <img src="imagenes/casa.jpg" class="casa" alt="casa">
+        <div class="producto">
+            <br><br>
+            <h3>¿Quienes somos?</h3>
+            <br><br>
+            <p>Somos Wash House, nos especializamos en brindar un servicio de limpieza a domicilio de colchones,alfombras y muebles, diseñado para quienes valoran la comodidad y la excelencia en la limpieza de sus hogares  y oficinas. Nuestro compromiso es no solo con la limpieza, sino también con la creación de ambientes saludables y revitalizados que mejoren la calidad de vida de nuestros clientes.</p>
+            <br><br><br><br>
+            <br><br><br><br>
+        </div>
+    </section>
+    <img src="imagenes/file.png" class="file" alt="file">
+    <section  id="experiencia">
+        <div class="producto">
+            <br><br>
+            <h3>Somos Profesionales</h3>
+            <br><br>
+            <p>Lo que nos diferencia es nuestro equipo de profesionales altamente capacitados y dedicados, quienes se esfuerzan en cada servicio para superar las expectativas de nuestros clientes. Nos aseguramos de que cada detalle se aborde con precisión y cuidado, logrando una experiencia personalizada y de calidad en cada visita. <br>
+                <br>Con Wash House, puedes confiar en un servicio eficaz, profesional y amigable, que marca la diferencia al transformar tus espacios en lugares impecables y confortables. ¡Estamos aquí para hacer de cada limpieza una experiencia excepcional!</p>
+            <br><br><br><br>
+        </div>
+        <img src="imagenes/alfombra.jpg" class="alfombra" alt="alfombra">
+        <div class="producto">
+            <br><br>
+            <h3>La mejor calidad</h3>
+            <br><br>
+            <p>En Wash House, sabemos que el confort en tu hogar es fundamental. Nos especializamos en la limpieza y el cuidado de muebles y alfombras con el máximo detalle, asegurando que cada espacio luzca como nuevo y esté listo para brindarte comodidad y frescura.</p>
+        </div>
+    </section>
+    <section id="Servicios">
+        <br><br><br>
+        <h2>Nuestros Servicios</h2>
+        <br><br><br><br><br>
+        <section id="Hogares">
+            <br><br><br><br>
+            <div class="panel-container">
+                <h3 class="main-title">Limpieza en Hogares</h3>
+        
+                <div class="panel">
+                    <br>
+                    <h4 class="panel-title">*Limpieza de Muebles*</h4>
+                    <ul>
+                        <br><br>
+                        <li><img src="imagenes/check.jpg" class="check" alt="check"> Protección y restauración de tapizados de cuero y tela</li>
+                        <br>
+                        <li><img src="imagenes/check.jpg" class="check" alt="check">Se realizará limpieza con aspiración seca.</li>
+                        <br>
+                        <li><img src="imagenes/check.jpg" class="check" alt="check">El proceso incluye desinfección superficial.</li>
+                        <br>
+                        <li><img src="imagenes/check.jpg" class="check" alt="check"> Aplicación de productos antiácaros y antihumedad</li>
+                        <br>
+                        <li><img src="imagenes/check.jpg" class="check" alt="check"> Desinfección, fumigación y desratización especial en covid-19</li>
+                    </ul>
+                    <a href="servicio-muebles.html" class="service-btn">Solicitar servicio</a>
+                    <br><br>
+                </div>
+        
+                <div class="panel">
+                    <br>
+                    <h4 class="panel-title">*Limpieza de Alfombras*</h4>
+                    <ul>
+                        <br><br>
+                            <li><img src="imagenes/check.jpg" class="check" alt="check">Eliminación profunda de manchas y suciedad incrustada.</li>
+                            <br>
+                            <li><img src="imagenes/check.jpg" class="check" alt="check">Aplicación de tratamientos antiácaros para una mayor protección.</li>
+                            <br>
+                            <li><img src="imagenes/check.jpg" class="check" alt="check">Desinfección y eliminación de bacterias y ácaros.</li>
+                            <br>
+                            <li><img src="imagenes/check.jpg" class="check" alt="check">Desinfección, fumigación y desratización especial en covid-19.</li>
+                            <br>
+                            <li><img src="imagenes/check.jpg" class="check" alt="check">El proceso incluye desinfección superficial.</li>
+                    </ul>
+                    <a href="pagina-destino.html" class="service-btn">Solicitar servicio</a>
+                    <br><br>
+                </div>
+        
+                <div class="panel">
+                    <br>
+                    <h4 class="panel-title">*Limpieza de Colchones*</h4>
+                    <ul>
+                        <ul>
+                            <br><br>
+                            <li><img src="imagenes/check.jpg" class="check" alt="check">Tratamientos especiales para manchas persistentes.</li>
+                            <br>
+                            <li><img src="imagenes/check.jpg" class="check" alt="check">Eliminación profunda de manchas y suciedad.</li>
+                            <br>
+                            <li><img src="imagenes/check.jpg" class="check" alt="check">Aplicación de productos antiácaros para una mayor protección.</li>
+                            <br>
+                            <li><img src="imagenes/check.jpg" class="check" alt="check">Desinfección completa y control de ácaros.</li>
+                            <br>
+                            <li><img src="imagenes/check.jpg" class="check" alt="check">Restauración de la frescura del colchón y eliminación de olores indeseados.</li>
+                        </ul>
+                    <br><br>
+                    <a href="pagina-destino.html" class="service-btn">Solicitar servicio</a>
+                </div>
+            </div>
+            <br><br><br><br><br>
+            </section>
+
+
+            <section id="Oficinas">
+                <div class="panel-container">
+                    <h3 class="main-title">Limpieza en Oficinas</h3>
+                    
+                    <div class="panel">
+                        <br>
+                        <h4 class="panel-title">*Limpieza de Muebles*</h4>
+                        <ul>
+                            <br><br>
+                            <li><img src="imagenes/check.jpg" class="check" alt="check">Limpieza detallada en amoblado de oficina.</li>
+                            <br>
+                            <li><img src="imagenes/check.jpg" class="check" alt="check">Uso de productos seguros y no abrasivos.</li>
+                            <br>
+                            <li><img src="imagenes/check.jpg" class="check" alt="check">Aspiración seca para superficies delicadas.</li>
+                            <br>
+                            <li><img src="imagenes/check.jpg" class="check" alt="check">Eliminación de polvo y alérgenos.</li>
+                            <br>
+                            <li><img src="imagenes/check.jpg" class="check" alt="check">Desinfección de superficies al finalizar.</li>
+                        </ul>
+                        <br><br>
+                        <a href="pagina-destino.html" class="service-btn">Solicitar servicio</a>
+                    </div>
+                
+                    <div class="panel">
+                        <br>
+                        <h4 class="panel-title">*Limpieza de Alfombras*</h4>
+                        <ul>
+                            <br><br>
+                                <li><img src="imagenes/check.jpg" class="check" alt="check">Limpieza especializada en alfombra</li>
+                                <br>
+                                <li><img src="imagenes/check.jpg" class="check" alt="check">Se realiza limpieza con aspiración profunda.</li>
+                                <br>
+                                <li><img src="imagenes/check.jpg" class="check" alt="check">El proceso incluye desinfección superficial.</li>
+                                <br>
+                                <li><img src="imagenes/check.jpg" class="check" alt="check">Aplicación de productos antiácaros y antihumedad.</li>
+                                <br>
+                                <li><img src="imagenes/check.jpg" class="check" alt="check">Desinfección, fumigación y desratización especial en covid-19.</li>
+                        </ul>
+                        <br><br>
+                        <a href="pagina-destino.html" class="service-btn">Solicitar servicio</a>
+                    </div>
+                
+                </div>
+            </section>
+        
+
+    <br><br><br>
+    <h2>Siempre Mejorando</h2>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <div class="video-container">
+        <video autoplay loop muted width="600">
+            <source src="https://video.wixstatic.com/video/84770f_0512b95c6bd44398a825e832e08a47a5/1080p/mp4/file.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        
+    </div>
+    
+    <h4 class="texto">comodidad | confort | descanso</h4>
+
+    <section id="contacto">
+        <footer class="footer">
+            <div class="container-footer">
+                <div class="footer-row">
+                    <div class="footer-links">
+                        <h4>Wash House</h4>
+                        <ul>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Libro de reclamaciones</a></li>
+                            <li><a href="#">Otros Servicios</a></li>
+                            <li><a href="#">Politica de privacidad</a></li>
+                            <li><a href="#">Afiliate</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Ayuda al cliente</h4>
+                        <ul>
+                            <li><a href="#">Contacto: 928 738 726</a></li>
+                            <li><a href="#">correo Electronico: informes@Washhousecorp.com</a></li>
+                            <li><a href="#">Horario de atencion oficinas: 8:00 am - 5:00 pm </a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Siguenos</h4>
+                        <div class="social-link">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>

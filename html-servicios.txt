@@ -1,0 +1,211 @@
+HTML
+----
+.--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="servicios-muebles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+
+
+    <title>Servicio</title>
+</head>
+<body>
+
+    <nav>
+        <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Imformacion</a>
+            <div class="dropdown-content">
+                <a href="#serviceinfo">Informacion de Servicio</a>
+                <a href="#buyinfo">Informacion de Compra</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Metodo de pago</a>
+            <div class="dropdown-content">
+                <a href="#pago">Pago Online</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Libro de Reclamaciones</a>
+            <div class="dropdown-content">
+                <a href="#contacto">Contactanos</a>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <section id="serviceinfo">
+        <h1>Informacion del servicio</h1>
+        <div class="imagen">
+            <img src="imagenes/servicios.jpg" class="servicios" alt="servicios">
+        </div>
+        <div class="contenedor">
+            <h2 style="color: #fff;">Limpieza de Muebles<h2>
+                <br><br>
+                <p style="font-size: 17px; line-height: 1.5; margin: 8px 0;color : #ffff;">Ofrecemos un servicio exclusivo de limpieza para muebles pequeños, <br>
+                    pensado para cuidar y revitalizar cada pieza de su hogar. <br>
+                Nuestro equipo especializado utiliza técnicas avanzadas y productos <br>
+                de alta calidad para garantizar un acabado impecable y seguro. <br></p>
+        </div>
+    </section>
+    <section id="buyinfo">
+        <h1>Solicitud del servicio</h1>
+        <br><br>
+        <div class="panel-container">
+            <h3 class="main-title">Tipos y Horarios de servicios</h3>
+            <br><br>
+                <div class="panel">
+                    <h4 class="panel-title">*Limpieza por horas*</h4>
+                    <ul>
+                        <br>
+                        <li><img src="imagenes/check.jpg" class="check" alt="check">Servicio flexible desde 2 horas.</li>
+                        <br>
+                        <li><img src="imagenes/check.jpg" class="check" alt="check">Incluye limpieza básica y desinfección.</li>
+                        <br>
+                        <li><img src="imagenes/check.jpg" class="check" alt="check">Perfecto para áreas pequeñas y específicas.</li>
+                        <br>
+                        <li><img src="imagenes/check.jpg" class="check" alt="check">Productos ecológicos disponibles.</li>
+                        <br>
+                    </ul>
+                </div>
+            
+                <!-- Paquete por días -->
+                <div class="panel">
+                    <h4 class="panel-title">*Limpieza por días*</h4>
+                    <ul>
+                        <br>
+                        <li><img src="imagenes/check.jpg" class="check" alt="check">Contrata servicios de 1 a 7 días continuos.</li>
+                        <br>
+                        <li><img src="imagenes/check.jpg" class="check" alt="check">Cobertura para limpiezas generales completas.</li>
+                        <br>
+                        <li><img src="imagenes/check.jpg" class="check" alt="check">Personal capacitado para trabajos prolongados.</li>
+                        <br>
+                        <li><img src="imagenes/check.jpg" class="check" alt="check">Descuentos al contratar más de 3 días.</li>
+                        <br>
+                    </ul>
+                </div>
+            
+                <!-- Paquete anual -->
+                <div class="panel">
+                    <h4 class="panel-title">*Limpieza anual*</h4>
+                    <ul>
+                        <br>
+                        <li><img src="imagenes/check.jpg" class="check" alt="check">Plan anual para hogares y empresas.</li>
+                        <br>
+                        <li><img src="imagenes/check.jpg" class="check" alt="check">Incluye limpiezas mensuales programadas.</li>
+                        <br>
+                        <li><img src="imagenes/check.jpg" class="check" alt="check">Atención prioritaria para emergencias.</li>
+                        <br>
+                        <li><img src="imagenes/check.jpg" class="check" alt="check">Beneficios exclusivos y soporte dedicado.</li>
+                        <br>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <br><br><br><br><br><br><br><br><br><br>
+        <section id="pago"> 
+            <div class="formulario-container">
+                <h2>Formulario de Solicitud de Servicio</h2>
+                <br><br>
+                <form id="formulario-limpieza" class="formulario">
+                    <label for="empresa">Nombre de la Empresa o Hogar:</label>
+                    <input type="text" id="empresa" name="empresa" placeholder="Ejemplo: Mi Empresa o Hogar">
+            
+                    <label for="tipo-servicio">Tipo de Servicio:</label>
+                    <select id="tipo-servicio" name="tipo-servicio">
+                        <option value="">Seleccione un servicio</option>
+                        <option value="horas">Limpieza por horas</option>
+                        <option value="dias">Limpieza por días</option>
+                        <option value="meses">Limpieza por meses</option>
+                    </select>
+            
+                    <div id="opciones-servicio" class="opciones-dinamicas">
+                        <!-- Opciones dinámicas según el tipo de servicio -->
+                    </div>
+            
+                    <label for="pisos">Número de pisos:</label>
+                    <input type="number" id="pisos" name="pisos" placeholder="Ejemplo: 3" min="1">
+            
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Ejemplo: Calle Los Olmos 123">
+            
+                    <label for="contacto">Número de contacto:</label>
+                    <input type="text" id="contacto" name="contacto" placeholder="Ejemplo: 931-456-789">
+            
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="Ejemplo: correo@ejemplo.com">
+            
+                    <button type="submit" class="btn-submit">Solicitar Servicio</button>
+                </form>
+                
+                        <!-- Voucher -->
+                <div class="voucher">
+                    <h3>Voucher Electrónico</h3>
+                    <p><strong>Hora de solicitud:</strong> <span id="hora">-</span></p>
+                    <p><strong>Servicio requerido:</strong> <span id="servicio-requerido">-</span></p>
+                    <p><strong>Duración seleccionada:</strong> <span id="duracion-seleccionada">-</span></p>
+                    <p><strong>Pisos seleccionados:</strong> <span id="pisos-seleccionados">-</span></p>
+                    <p><strong>Precio total:</strong> S/<span id="precio-total">0.00</span></p>
+                    <p><strong>Número de cuenta bancaria:</strong> 1234-5678-9876</p>
+                    <div class="qr-code" id="qr-code"></div>
+                </div>
+                
+                <!-- Botón para generar el código QR -->
+                <button id="generar-qr">Generar Código QR</button>
+                
+                <!-- QRCode.js -->
+                <script src="js/qrcode.min.js"></script>
+                <script src="script.js"></script>
+            </div>
+        </section>
+        
+    <br><br><br><br><br><br><br>
+
+
+
+    
+    <section id="contacto">
+        <footer class="footer">
+            <div class="container-footer">
+                <div class="footer-row">
+                    <div class="footer-links">
+                        <h4>Wash House</h4>
+                        <ul>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Libro de reclamaciones</a></li>
+                            <li><a href="#">Otros Servicios</a></li>
+                            <li><a href="#">Politica de privacidad</a></li>
+                            <li><a href="#">Afiliate</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Ayuda al cliente</h4>
+                        <ul>
+                            <li><a href="#">Contacto: 928 738 726</a></li>
+                            <li><a href="#">correo Electronico: informes@Washhousecorp.com</a></li>
+                            <li><a href="#">Horario de atencion oficinas: 8:00 am - 5:00 pm </a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Siguenos</h4>
+                        <div class="social-link">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
